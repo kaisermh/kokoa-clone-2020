@@ -1,0 +1,35 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 18px;
+}
+
+.icon-invisible {
+  color: rgb(255, 255, 255);
+}
+/* kmh_210328 homwwork(#6.25_2) */
+
+.icon-row__icon--updatedinformation {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  top: -25px;
+  right: 8px;
+}
+/* kmh_210328 homwwork(#6.25_2) */

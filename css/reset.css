@@ -130,3 +130,8 @@ input:focus {
   outline: none;
 }
 /* input 관련 element를 활성화시에도 아웃라인 부분 활성화 안됨 */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

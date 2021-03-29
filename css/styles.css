@@ -1,15 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
-@import "status-bar.css";
 /* Reset CSS V2.0 Import (Web Browser에서 default로 제공하는 margin 등을 0으로 설정하는 등 default설정을 없앤다. */
 @import "variables.css";
 
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
 body {
   font-family: "Open Sans", sans-serif;
+  color: #2e363e;
+
   /* 모든 font를 추가하지는 말자, 웹사이트가 heavy해진다. */
 }
 
-.welcome-header {
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+/* <login.css로 이동> */
+
+/* 1안 - BEM(Block Element Modifier) 방식 */
+/* .welcome-header {
   margin: 90px 0px;
   text-align: center;
   display: flex;
@@ -26,9 +51,10 @@ body {
 .welcome-header__text {
   width: 60%;
   opacity: 0.7;
-}
+} */
 
-#login-form {
+/* 2안 방식 */
+/* #login-form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
@@ -37,11 +63,11 @@ body {
 #login-form input {
   border: none;
   padding: 15px 0px;
-  font-size: 18px;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
-  /* not을 사용하여 button에는 본 내용이 적용되지 않도록 하기 위해 주석 처리 */
-  margin-bottom: 25px;
-  transition: border-color 0.3s ease-in-out;
+  font-size: 18px; */
+/* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+/* transition: border-color 0.3s ease-in-out; */
+/* not을 사용하여 button에는 본 내용이 적용되지 않도록 하기 위해 주석 처리 */
+/* margin-bottom: 25px;
 }
 
 #login-form input:not([type="submit"]) {
@@ -56,6 +82,22 @@ body {
 #login-form input:focus {
   border-color: var(--yellow);
 }
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}  */
+
+/* <status-bar.css로 이동> */
 
 /* .status-bar{ */
 /* display: flex; */

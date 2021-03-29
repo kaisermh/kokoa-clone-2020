@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* width 100%에 padding-left:50 때문에 50만큼 box size가 우측으로 50만큼 더 늘어남이 적용되어 ... 이 화면밖으로 넘어감 */
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  /* 마법의 한줄(box-sizing) - #6.12 강좌*/
+  /* Padding을 적용하더라도 전체 box size는 변경하지 말라는 의미 */
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+}
+
+.nav__notification {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.nav__updatedinformation {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+}

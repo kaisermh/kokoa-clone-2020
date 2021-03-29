@@ -1,0 +1,33 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px var(--horizontal-space) 25px;
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+  /* position: relative; */
+}
+
+/* kmh_210324_homework1_begin */
+.screen-header__icons--cog {
+  position: relative;
+}
+
+.screen-header__icons--updatedinformation {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+/* kmh_210324_homework1_end */
