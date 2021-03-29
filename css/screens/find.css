@@ -101,3 +101,27 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /* will-change -> 어떤 변화가 생길 것인지 브라우저에게 직접적으로 알려줌으로써, 좀 더 안정적인 애니메이션 제공 가능 */
+  /* will-chagne는  그래픽카드를 이용해서 animation을 가속화*/
+  /* 위 줄을 넣느냐 주석처리하느냐에 다라 흔들림이 사라짐이 확인됨 */
+  animation: heartBeat 1s linear infinite;
+}
